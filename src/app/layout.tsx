@@ -1,5 +1,5 @@
 import { type Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Titillium_Web } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 
@@ -14,6 +14,12 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+const titil = Titillium_Web({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-titil',
+})
+
 // Use local version of Lexend so that we can use OpenType features
 const lexend = localFont({
   src: '../fonts/lexend.woff2',
@@ -24,10 +30,10 @@ const lexend = localFont({
 export const metadata: Metadata = {
   title: {
     template: '%s - Docs',
-    default: 'CacheAdvance - Never miss the cache again.',
+    default: "CS For All - The Young People's Project",
   },
   description:
-    'Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.',
+    "Building Capacity in Computer Science Education and Student Near Peer Classroom Mentorship. A Young People's Project Research Practitioner Partnership",
 }
 
 export default function RootLayout({
@@ -38,7 +44,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={clsx('h-full antialiased', inter.variable, lexend.variable)}
+      className={clsx('h-full antialiased', inter.variable, lexend.variable, titil.variable)}
       suppressHydrationWarning
     >
       <body className="flex min-h-full bg-white dark:bg-slate-900">

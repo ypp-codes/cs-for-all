@@ -22,12 +22,17 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: 'var(--font-inter)',
+        sans: 'var(--font-titil)',
         display: ['var(--font-lexend)', { fontFeatureSettings: '"ss01"' }],
       },
       maxWidth: {
         '8xl': '88rem',
       },
+      colors: {
+        primary: '#4C6DED',
+        secondary: '#EDAA65',
+        accent: '#EDAA65',
+      }
     },
   },
   plugins: [typographyPlugin],
