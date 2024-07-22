@@ -23,7 +23,7 @@ export default {
     extend: {
       fontFamily: {
         sans: 'var(--font-titil)',
-        display: ['var(--font-lexend)', { fontFeatureSettings: '"ss01"' }],
+        display: 'var(--font-alfa)',
       },
       maxWidth: {
         '8xl': '88rem',

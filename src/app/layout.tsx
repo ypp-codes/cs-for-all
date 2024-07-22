@@ -1,5 +1,5 @@
 import { type Metadata } from 'next'
-import { Inter, Titillium_Web } from 'next/font/google'
+import { Alfa_Slab_One, Inter, Titillium_Web } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 
@@ -14,10 +14,18 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+const alfa = Alfa_Slab_One({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '400',
+  variable: '--font-alfa'
+})
+
 const titil = Titillium_Web({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-titil',
+  weight: ['200', '300', '400', '600', '700', '900']
 })
 
 // Use local version of Lexend so that we can use OpenType features
@@ -44,10 +52,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={clsx('h-full antialiased', inter.variable, lexend.variable, titil.variable)}
+      className={clsx('h-full antialiased', inter.variable, lexend.variable, titil.variable, alfa.variable)}
       suppressHydrationWarning
     >
-      <body className="flex min-h-full bg-white dark:bg-slate-900">
+      <body className="flex min-h-full bg-white dark:bg-slate-900 transition-all">
         <Providers>
           <Layout>{children}</Layout>
         </Providers>
