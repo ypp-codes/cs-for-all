@@ -1,6 +1,24 @@
 ---
-title: What kind of math learning experiences do young people need in order to achieve full citizenship, a good career, and the best chance for a quality life in the 21st century?
+title: YPP History, Mission, & Vision
 ---
+
+{% html %}
+<iframe src="https://player.vimeo.com/video/834908962?h=99a408a104" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+{% /html %}
+
+{% html%}
+<details>
+<summary>Video Transcript</summary>
+<p>
+Hi, I'm Maisha Moses with the Young People's Project, also known as YPP. YPP grew out of the Algebra Project, which was started by my father, Bob Moses. And it builds on principles from his work on voting rights in Mississippi in the 1960, with the Student Nonviolent Coordinating Committee (SNCC), education, and in particular math literacy is for Black and brown youth today, what voting rights were to disenfranchise Black people 50 years ago, YPP is here because in addition to ineffective math classrooms, our students also deal with the legacy of 400 years of systemic racism, and the ways in which America's caste system continues to operate in our education system.
+</p>
+<p>
+YPP recognizes that one of the best resources to help middle school students learn math and believe they can do math is older students that they identify with. And so we recruit those older students, train them as what we call Math Literacy Workers (MLWs) to make them understand the importance of this problem, and convince them to invest their time to learn math and teach it to their peers. Our solution seeks to impact math proficiency, joy in learning math and math identity. Long term, we want to further develop our core model to help schools and communities access funds that enable them to invest in their students to help work on the problem.
+</p>
+</details>
+{% /html %}
+
+# What kind of math learning experiences do young people need in order to achieve full citizenship, a good career, and the best chance for a quality life in the 21st century?
 
 The Young People’s Project (YPP) was founded in 1996 by two generations of young people, as an outgrowth of the Algebra Project, which Bob Moses founded as part of the legacy of SNCC’s student-led grassroots organizing and voter registration efforts in 1960’s Mississippi. YPP’s founders, all present or former Algebra Project students, grounded YPP in the legacy of SNCC’s work in MS, and in the understanding that part of the solution to the problem of changing educational circumstances for students at the bottom lies within the students themselves. The intellectual capital YPP inherited from Bob Moses and the Algebra Project includes math curriculum and pedagogy, as well as a praxis of grassroots organizing, rooted in the American Black freedom struggle, grounded in Ella Baker’s approach to organizing with people to change the conditions of their lives.
 
@@ -10,4 +28,4 @@ YPP envisions a day when every young person—regardless of ethnicity, gender, o
 
 YPP is a solution that young people build with each other, under the leadership, support, and guidance of invested adults. MLWs learn pieces of math well enough to teach it and learn to facilitate math activities with middle school students. Together they learn and teach each other math in ways that are meaningful and engaging. As a result, they develop as a community, and become their own support.
 
-For more information, visit [https://www.typp.org/](https://www.typp.org/).
+For more information, visit {% html %}<a href="https://www.typp.org" target="_blank" %>https://www.typp.org</a>{% /html %}.

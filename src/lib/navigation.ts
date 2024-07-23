@@ -1,56 +1,74 @@
 export const navigation = [
   {
-    title: 'Introduction',
+    title: 'Who is YPP?',
     links: [
-      { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
-    ],
-  },
-  {
-    title: 'Core concepts',
-    links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
       {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
+        title: 'YPP History, Mission & Vision',
+        href: '/'
       },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
       {
-        title: 'Introduction to string theory',
-        href: '/docs/introduction-to-string-theory',
+        title: 'YPP Alumni as Present Day Educators',
+        href: '/docs/alumni'
       },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
-    ],
-  },
-  {
-    title: 'Advanced guides',
-    links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
       {
-        title: 'Predictive data generation',
-        href: '/docs/predictive-data-generation',
+        title: 'Math and Computer Science?',
+        href: '/docs/math-cs'
       },
     ],
   },
   {
-    title: 'API reference',
+    title: 'The Research',
     links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
+      { title: 'The Research Project',
+        href: '/docs/research'
+      },
+      {
+        title: 'Teacher Commitments',
+        href: '/docs/teacher-commitment',
+      },
+      { title: 'Permissions & Consent',
+        href: '/docs/permissions-consent'
+      }
     ],
   },
   {
-    title: 'Contributing',
+    title: 'PD Materials Overview',
     links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'The Math & CS',
+        href: '/docs/math-cs-materials'
+      },
+      {
+        title: 'Pedagogical Practices',
+        href: '/docs/pedagogy',
+      },
     ],
   },
+  {
+    title: 'Facilitator Guide',
+    links: [
+      { title: 'Human Programming',
+        href: '/docs/human-programming'
+      },
+      {
+        title: 'Circles of Evaluation',
+        href: '/docs/circles-of-evaluation',
+      },
+      {
+        title: 'Data Types & Variables',
+        href: '/docs/data-types-variables',
+      },
+      {
+        title: 'Functions & Contracts',
+        href: '/docs/functions-contracts',
+      },
+      {
+        title: 'Diagramming Function Composition',
+        href: '/docs/diagramming-function-composition',
+      },
+      {
+        title: 'Making Flags',
+        href: '/docs/making-flags',
+      },
+    ],
+  }
 ]

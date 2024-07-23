@@ -8,3 +8,11 @@
     display: none;
   }
 }
+
+details {
+  @apply border-slate-200 dark:border-slate-600 border rounded-lg p-3  my-10
+}
+
+details > summary {
+  @apply font-bold hover:cursor-pointer
+}
