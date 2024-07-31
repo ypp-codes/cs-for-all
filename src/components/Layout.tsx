@@ -46,9 +46,9 @@ function Header() {
         <MobileNavigation />
       </div>
       <div className="relative flex flex-grow basis-0 items-center min-w-fit mr-10">
-        <Link href="/" aria-label="Home page" className='flex hover:scale-[1.05] transition-transform'>
+        <Link href="/" aria-label="Home page" className='flex hover:scale-[1.02] transition-transform'>
           <Logo className="hidden h-9 w-auto fill-slate-700 lg:block dark:fill-sky-100" />
-          <Logomark className="hidden bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-secondary to-orange-400 lg:flex pl-6 font-display font-bold text-xl min-w-fit h-auto items-center" />
+          <Logomark className="hidden bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-secondary to-orange-400 lg:flex pl-6 font-display font-extrabold text-xl min-w-fit h-auto items-center" />
         </Link>
       </div>
       <div className="-my-5 mr-6 sm:mr-8 md:mr-0">

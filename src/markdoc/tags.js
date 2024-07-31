@@ -6,8 +6,8 @@ const UnescapedHtml = ({ htmlWrapperTag = 'span', children }) => {
     typeof children === 'string'
       ? children
       : typeof children.props.children === 'string'
-      ? children.props.children
-      : children.props.children.join('')
+        ? children.props.children
+        : children.props.children.join('')
 
   const CustomTag = htmlWrapperTag
   return <CustomTag className="inline" dangerouslySetInnerHTML={{ __html: html }} />
@@ -17,7 +17,7 @@ const Anchor = (...props) => {
   return <a {...props}>{props.children}</a>
 }
 
-const tags = {
+const tags =   {
   callout: {
     attributes: {
       title: { type: String },

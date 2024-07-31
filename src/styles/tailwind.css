@@ -16,3 +16,11 @@ details {
 details > summary {
   @apply font-bold hover:cursor-pointer
 }
+
+.prose-par > p {
+  @apply transition-all hover:scale-[1.01]
+}
+
+strong {
+  @apply !text-slate-700 dark:!text-slate-400
+}

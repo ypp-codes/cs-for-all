@@ -1,5 +1,5 @@
 import { type Metadata } from 'next'
-import { Alfa_Slab_One, Inter, Titillium_Web } from 'next/font/google'
+import { Alfa_Slab_One, Inter, Patua_One, Titillium_Web, Wellfleet } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 
@@ -28,13 +28,6 @@ const titil = Titillium_Web({
   weight: ['200', '300', '400', '600', '700', '900']
 })
 
-// Use local version of Lexend so that we can use OpenType features
-const lexend = localFont({
-  src: '../fonts/lexend.woff2',
-  display: 'swap',
-  variable: '--font-lexend',
-})
-
 export const metadata: Metadata = {
   title: {
     template: '%s - Docs',
@@ -52,7 +45,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={clsx('h-full antialiased', inter.variable, lexend.variable, titil.variable, alfa.variable)}
+      className={clsx('h-full antialiased', inter.variable, titil.variable, alfa.variable)}
       suppressHydrationWarning
     >
       <body className="flex min-h-full bg-white dark:bg-slate-900 transition-all">
