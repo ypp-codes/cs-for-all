@@ -1,7 +1,7 @@
 import { DocsLayout } from '@/components/DocsLayout'
 import { FaArrowDown, FaArrowRight, FaSun, FaSchool } from 'react-icons/fa'
 
-export function Block({ children, className, border, cornerText }) {
+export function Block({ children, className, border, cornerText }: { children: React.ReactNode, className?: string, border?: boolean, cornerText?: string }) {
 	return (
 		<div className={`${border ? "border border-secondary" : "bg-gradient-to-r from-orange-600 to-orange-600 via-orange-400 bg-clip-text text-transparent"} h-fit transition hover:scale-[1.02] mx-auto rounded-lg p-5 w-fit max-w-[70%] relative ${className}`}>
 			{cornerText ? <div className="absolute -top-5 -right-5 w-fit px-2 py-1 rounded-lg text-sm border border-primary bg-white dark:bg-slate-900 font-bold text-center">{cornerText === "Summer" ? <FaSun className="inline -mt-1" /> : <FaSchool className="inline -mt-1" />} {cornerText}</div> : null}
@@ -10,7 +10,7 @@ export function Block({ children, className, border, cornerText }) {
 	)
 }
 
-function Step({ children }) {
+function Step({ children }: { children: React.ReactNode }) {
 	return (
 		<div className="*:text-center grid grid-cols-1 md:grid-cols-2 *:my-4 *:mx-auto *:md:mx-4 *:md:my-auto md:flex">
 			{children}
@@ -21,7 +21,7 @@ function Step({ children }) {
 
 export default function Page() {
 	return (
-		<DocsLayout frontmatter={{ title: "Permissions & Consent", description: "" }} nodes={[]}>
+		<DocsLayout frontmatter={{ title: "Permissions & Consent" }} nodes={[]}>
 			<div className="*:my-5 ">
 				<p>The professional learning opportunities for teachers and college students will function as a lab providing them the opportunity to learn the curricular commitments; the computational thinking, programming skills, and culturally relevant pedagogies necessary to implement the curriculum and to co-design lessons. Below is a work flow of requirements in order to begin!</p>
 				{/* STEP ONE */}

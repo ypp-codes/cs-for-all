@@ -7,6 +7,7 @@ export function HeroBackground(props: React.ComponentPropsWithoutRef<'svg'>) {
 
   return (
     <Image
+      alt="student writing on chalkboard"
       className="opacity-20 w-full"
       src={factorTree}
       width={1400}

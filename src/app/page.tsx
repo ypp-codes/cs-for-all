@@ -2,8 +2,8 @@ import { DocsLayout } from '@/components/DocsLayout'
 
 export default function Page() {
 	return (
-		<DocsLayout frontmatter={{ title: "YPP History, Mission, & Vision", description: "" }} nodes={[]}>
-			<iframe className="w-[90%] m-auto aspect-video" src="https://player.vimeo.com/video/834908962?h=99a408a104" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+		<DocsLayout frontmatter={{ title: "YPP History, Mission, & Vision" }} nodes={[]}>
+			<iframe className="w-[90%] m-auto aspect-video" src="https://player.vimeo.com/video/834908962?h=99a408a104" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
 
 			<details>
 <summary>Video Transcript</summary>

@@ -2,10 +2,10 @@ import { DocsLayout } from '@/components/DocsLayout'
 
 export default function Page() {
 	return (
-		<DocsLayout frontmatter={{ title: "The Research Project", description: "" }} nodes={[]}>
+		<DocsLayout frontmatter={{ title: "The Research Project" }} nodes={[]}>
 			<div className='text-xl'>National Science Foundation supported research project titled: <em>Building Capacity in Computer Science Education and Student Near Peer Classroom Mentorship.</em></div>
 
-			<iframe className="m-auto" src="https://player.vimeo.com/video/710820591?h=12d4b32764&color=87e65b" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+			<iframe className="m-auto" src="https://player.vimeo.com/video/710820591?h=12d4b32764&color=87e65b" width="640" height="360" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
 
 			<details>
 				<summary>Video Transcript</summary>

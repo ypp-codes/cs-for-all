@@ -2,7 +2,7 @@ import { DocsLayout } from '@/components/DocsLayout'
 
 export default function Page() {
 	return (
-		<DocsLayout frontmatter={{ title: "Teacher Commitments", description: "" }} nodes={[]}>
+		<DocsLayout frontmatter={{ title: "Teacher Commitments" }} nodes={[]}>
 			<div className="grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid px-10 *:w-fit *:p-3 *:m-3 *:border-secondary *:border *:rounded-lg *:transition-all">
 				<div className="hover:scale-[1.03]">
 					<strong>Stipend</strong>

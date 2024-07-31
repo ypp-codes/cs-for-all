@@ -10,7 +10,7 @@ function LogomarkPaths() {
   )
 }
 
-export function Logomark(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function Logomark(props) {
   return (
     <div {...props}>
       Computer Science For All
@@ -18,8 +18,8 @@ export function Logomark(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function Logo(props) {
   return (
-    <Image width={90} src={typpLogo}/>
+    <Image width={90} src={typpLogo} />
   )
 }

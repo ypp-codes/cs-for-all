@@ -85,7 +85,7 @@ const tags =   {
   //     height: { type: String },
   //     frameborder: { type: String },
   //     allow: { type: String },
-  //     allowfullscreen: { type: Boolean }
+  //     allowFullScreen: { type: Boolean }
   //   }
   // }
 }

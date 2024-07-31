@@ -1,7 +1,7 @@
 import { DocsLayout } from '@/components/DocsLayout'
 import { Block } from '../permissions-consent/page'
 
-function GridItem({ children }) {
+function GridItem({ children }: { children: React.ReactNode }) {
 	return <div className="flex flex-col hover:scale-[1.02] *:hover:scale-100 transition">
 		{children}
 	</div>
@@ -9,7 +9,7 @@ function GridItem({ children }) {
 
 export default function Page() {
 	return (
-		<DocsLayout frontmatter={{ title: "The Math & CS", description: "" }} nodes={[]}>
+		<DocsLayout frontmatter={{ title: "The Math & CS" }} nodes={[]}>
 			<div className="grid grid-cols-1 *:p-3 *:border *:border-secondary *:rounded-xl gap-3 sm:gap-5 sm:grid-cols-2">
 				<GridItem>
 					<Block className="text-2xl -mb-5 -ml-5">Human Programming</Block>

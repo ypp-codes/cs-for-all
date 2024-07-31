@@ -2,8 +2,8 @@ import { DocsLayout } from '@/components/DocsLayout'
 
 export default function Page() {
 	return (
-		<DocsLayout frontmatter={{ title: "Math and Computer Science?", description: "" }} nodes={[]}>
-			<iframe className="w-[90%] m-auto aspect-video" src="https://www.youtube.com/embed/E7PxbzUo7Jk?si=08-gAoQVQW1iR1fi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<DocsLayout frontmatter={{ title: "Math and Computer Science?" }} nodes={[]}>
+			<iframe className="w-[90%] m-auto aspect-video" src="https://www.youtube.com/embed/E7PxbzUo7Jk?si=08-gAoQVQW1iR1fi" title="YouTube video player" allowFullScreen></iframe>
 
 			<details>
 				<summary>

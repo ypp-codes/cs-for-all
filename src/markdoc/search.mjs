@@ -26,10 +26,10 @@ function extractSections(node, sections, isRoot = true) {
   if (isRoot) {
     slugify.reset()
   }
-  if (node.type === 'heading' || node.type === 'paragraph') {
+  if (node.type === 'JSXElement') {
     let content = toString(node).trim()
-    if (node.type === 'heading' && node.attributes.level <= 2) {
-      let hash = node.attributes?.id ?? slugify(content)
+    if (node.openingElement.name.name === 'h1' || node.openingElement.name.name === 'h2') {
+      let hash = node.openingElement.attributes.find(attr => attr.name.name === 'id')?.value.value ?? slugify(content)
       sections.push([content, hash, []])
     } else {
       sections.at(-1)[2].push(content)
@@ -53,25 +53,20 @@ export default function withSearch(nextConfig = {}) {
             let pagesDir = path.resolve('./src/app')
             this.addContextDependency(pagesDir)
 
-            let files = glob.sync('**/page.md', { cwd: pagesDir })
+            let files = glob.sync('**/page.tsx', { cwd: pagesDir })
             let data = files.map((file) => {
-              let url =
-                file === 'page.md' ? '/' : `/${file.replace(/\/page\.md$/, '')}`
-              let md = fs.readFileSync(path.join(pagesDir, file), 'utf8')
+              let url = file === 'page.tsx' ? '/' : `/${file.replace(/\/page\.tsx$/, '')}`
+              let jsx = fs.readFileSync(path.join(pagesDir, file), 'utf8')
 
               let sections
 
-              if (cache.get(file)?.[0] === md) {
+              if (cache.get(file)?.[0] === jsx) {
                 sections = cache.get(file)[1]
               } else {
-                let ast = Markdoc.parse(md)
-                let title =
-                  ast.attributes?.frontmatter?.match(
-                    /^title:\s*(.*?)\s*$/m,
-                  )?.[1]
-                sections = [[title, null, []]]
+                let ast = parseJSX(jsx) // You need to implement a function to parse JSX content
+                sections = []
                 extractSections(ast, sections)
-                cache.set(file, [md, sections])
+                cache.set(file, [jsx, sections])
               }
 
               return { url, sections }
