@@ -69,19 +69,19 @@ export function ThemeSelector(
     <Listbox as="div" value={theme} onChange={setTheme} {...props}>
       <Label className="sr-only">Theme</Label>
       <ListboxButton
-        className="flex h-6 w-6 items-center justify-center rounded-lg shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+        className="color-white flex h-6 w-6 items-center justify-center rounded-lg bg-slate-700 shadow-md shadow-black/5 ring-1 ring-white/5 dark:ring-inset"
         aria-label="Theme"
       >
         <LightIcon
           className={clsx(
-            'h-4 w-4 dark:hidden',
-            theme === 'system' ? 'fill-slate-400' : 'fill-primary',
+            '!color-white h-4 w-4 dark:hidden',
+            theme === 'system' ? 'fill-slate-400' : 'fill-slate-200',
           )}
         />
         <DarkIcon
           className={clsx(
-            'hidden h-4 w-4 dark:block',
-            theme === 'system' ? 'fill-slate-400' : 'fill-primary',
+            '!color-white hidden h-4 w-4 dark:block',
+            theme === 'system' ? 'fill-slate-400' : 'fill-slate-200',
           )}
         />
       </ListboxButton>
