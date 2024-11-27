@@ -22,17 +22,18 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: 'var(--font-titil)',
-        display: 'var(--font-alfa)',
+        sans: 'var(--source-sans)',
+        display: 'var(--font-space-grotesk)',
+        logo: 'var(--font-argon)',
       },
       maxWidth: {
         '8xl': '88rem',
       },
       colors: {
-        primary: '#4C6DED',
-        secondary: '#EDAA65',
-        accent: '#EDAA65',
-      }
+        primary: '##00A97D',
+        secondary: '#05714F',
+        accent: '#018A5E',
+      },
     },
   },
   plugins: [typographyPlugin],

@@ -1,25 +1,19 @@
-import Image from "next/image"
-import typpLogo from "@/images/typp-logo.gif"
-
-function LogomarkPaths() {
-  return (
-    <g fill="none" stroke="#38BDF8" strokeLinejoin="round" strokeWidth={3}>
-      <path d="M10.308 5L18 17.5 10.308 30 2.615 17.5 10.308 5z" />
-      <path d="M18 17.5L10.308 5h15.144l7.933 12.5M18 17.5h15.385L25.452 30H10.308L18 17.5z" />
-    </g>
-  )
-}
+import Image from 'next/image'
+import typpLogo from '@/images/YPP-Logo-white.webp'
+import Link from 'next/link'
 
 export function Logomark(props) {
-  return (
-    <div {...props}>
-      Computer Science For All
-    </div>
-  )
+  return <div {...props}>Computer Science For All</div>
 }
 
-export function Logo(props) {
+export function Logo(_props) {
   return (
-    <Image width={90} src={typpLogo} />
+    <Link
+      href="/"
+      className="flex w-fit items-center space-x-5 font-display text-xl font-semibold text-white"
+    >
+      <Image alt="YPP logo" src={typpLogo} height={60} className="" />
+      <div>Computer Science For All</div>
+    </Link>
   )
 }

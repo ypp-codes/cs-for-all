@@ -1,32 +1,10 @@
 import { type Metadata } from 'next'
-import { Alfa_Slab_One, Inter, Patua_One, Titillium_Web, Wellfleet } from 'next/font/google'
+import { Space_Grotesk, Source_Sans_3 } from 'next/font/google'
 import localFont from 'next/font/local'
-import clsx from 'clsx'
-
-import { Providers } from '@/app/providers'
-import { Layout } from '@/components/Layout'
-
+import './gloabls.css'
 import '@/styles/tailwind.css'
-
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
-
-const alfa = Alfa_Slab_One({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: '400',
-  variable: '--font-alfa'
-})
-
-const titil = Titillium_Web({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-titil',
-  weight: ['200', '300', '400', '600', '700', '900']
-})
+import { Providers } from './providers'
+import { Layout } from '@/components/Layout'
 
 export const metadata: Metadata = {
   title: {
@@ -37,18 +15,32 @@ export const metadata: Metadata = {
     "Building Capacity in Computer Science Education and Student Near Peer Classroom Mentorship. A Young People's Project Research Practitioner Partnership",
 }
 
+const SpaceGroteskFont = Space_Grotesk({
+  weight: ['400', '600'],
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+})
+const SourceSans = Source_Sans_3({
+  variable: '--font-source-sans',
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
+const MonaspaceArgon_Regular = localFont({
+  src: 'fonts/MonaspaceArgon-Regular.woff',
+  variable: '--font-argon',
+  weight: '300',
+})
+
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html
-      lang="en"
-      className={clsx('h-full antialiased', inter.variable, titil.variable, alfa.variable)}
-      suppressHydrationWarning
-    >
-      <body className="flex min-h-full bg-white dark:bg-slate-900 transition-all">
+    <html lang="en">
+      <body
+        className={`${SpaceGroteskFont.variable} ${SourceSans.variable} ${MonaspaceArgon_Regular.variable} min-h-4xl antialiased`}
+      >
         <Providers>
           <Layout>{children}</Layout>
         </Providers>
@@ -56,3 +48,4 @@ export default function RootLayout({
     </html>
   )
 }
+
