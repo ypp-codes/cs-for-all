@@ -5,6 +5,8 @@ import './gloabls.css'
 import '@/styles/tailwind.css'
 import { Providers } from './providers'
 import { Layout } from '@/components/Layout'
+import '@vidstack/react/player/styles/base.css'
+import '@vidstack/react/player/styles/plyr/theme.css'
 
 export const metadata: Metadata = {
   title: {
@@ -48,4 +50,3 @@ export default function RootLayout({
     </html>
   )
 }
-

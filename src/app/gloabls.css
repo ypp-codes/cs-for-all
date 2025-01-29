@@ -18,6 +18,10 @@ html {
 /*  }*/
 /*}*/
 
+.plyr {
+  --plyr-color-main: #00a97d;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

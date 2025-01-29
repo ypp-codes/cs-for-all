@@ -1,4 +1,5 @@
 import typographyPlugin from '@tailwindcss/typography'
+import vidstackPlugin from '@vidstack/react/tailwind.cjs'
 import { type Config } from 'tailwindcss'
 
 export default {
@@ -36,5 +37,5 @@ export default {
       },
     },
   },
-  plugins: [typographyPlugin],
+  plugins: [typographyPlugin, vidstackPlugin],
 } satisfies Config
