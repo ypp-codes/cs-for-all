@@ -1,9 +1,9 @@
 import { DocsLayout } from '@/components/DocsLayout'
 import { MediaPlayer, MediaProvider } from '@vidstack/react'
 import {
-  defaultLayoutIcons,
-  DefaultVideoLayout,
-} from '@vidstack/react/player/layouts/default'
+  PlyrLayout,
+  plyrLayoutIcons,
+} from '@vidstack/react/player/layouts/plyr'
 
 export default function Page() {
   return (
@@ -11,9 +11,9 @@ export default function Page() {
       frontmatter={{ title: 'YPP History, Mission, & Vision' }}
       nodes={[]}
     >
-      <MediaPlayer title="Who is YPP?" src="vimeo/834908962">
+      <MediaPlayer title="Math and Computer Science?" src="youtube/E7PxbzUo7Jk">
         <MediaProvider />
-        <DefaultVideoLayout icons={defaultLayoutIcons} />
+        <PlyrLayout icons={plyrLayoutIcons} />
       </MediaPlayer>
 
       <details>
@@ -102,4 +102,3 @@ export default function Page() {
     </DocsLayout>
   )
 }
-
