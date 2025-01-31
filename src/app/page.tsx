@@ -11,7 +11,7 @@ export default function Page() {
       frontmatter={{ title: 'YPP History, Mission, & Vision' }}
       nodes={[]}
     >
-      <MediaPlayer title="Math and Computer Science?" src="youtube/E7PxbzUo7Jk">
+      <MediaPlayer title="Who is YPP?" src="vimeo/834908962">
         <MediaProvider />
         <PlyrLayout icons={plyrLayoutIcons} />
       </MediaPlayer>
