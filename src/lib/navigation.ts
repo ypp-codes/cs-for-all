@@ -11,9 +11,14 @@ export const navigation = [
         href: '/docs/alumni'
       },
       {
-        title: 'Math and Computer Science?',
+        title: 'Exploring STEM Literacy',
+        href: '/docs/exploring-stem'
+      },
+      {
+        title: 'Building Capacity in CS Education',
         href: '/docs/math-cs'
       },
+      
     ],
   },
   {
@@ -22,13 +27,17 @@ export const navigation = [
       { title: 'The Research Project',
         href: '/docs/research'
       },
+      { title: 'Teacher Testimonials',
+        href: '/docs/teacher-testimonials'
+      },
+      /* 
       {
         title: 'Teacher Commitments',
         href: '/docs/teacher-commitment',
       },
       { title: 'Permissions & Consent',
         href: '/docs/permissions-consent'
-      }
+      }*/
     ],
   },
   {
